@@ -1,0 +1,34 @@
+﻿<UserControl
+    x:Class="ModernUINavigationApp.NewsApp.Pages.Settings.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="300"
+    d:DesignWidth="300"
+    mc:Ignorable="d">
+    <Grid>
+        <ScrollViewer>
+            <StackPanel MinWidth="200">
+                <TextBlock
+                    FontSize="36"
+                    Foreground="White"
+                    Style="{StaticResource Heading2}"
+                    Text="The NewsApp By Alexander Fininis" />
+                <TextBlock
+                    Margin="0,0,0,8"
+                    FontSize="22"
+                    Foreground="White"
+                    Text="Browse the news from multiple sources!"
+                    TextWrapping="Wrap" />
+                <TextBlock
+                    Margin="0,0,0,8"
+                    FontSize="22"
+                    Foreground="White"
+                    Text="Click the links above to start!"
+                    TextWrapping="Wrap" />
+                <Image Source="http://i3.mirror.co.uk/incoming/article9510697.ece/ALTERNATES/s615/PAY-THE-MAGIC-OF-WINTERTIME-IN-FINNISH-LAPLAND.jpg" />
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

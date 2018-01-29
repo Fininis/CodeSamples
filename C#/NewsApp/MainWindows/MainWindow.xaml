@@ -1,0 +1,43 @@
+﻿<mui:ModernWindow
+    x:Class="ModernUINavigationApp.NewsApp.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+    Title="NewsApp"
+    ContentSource="/Pages/Settings/About.xaml"
+    IsTitleVisible="True"
+    Style="{StaticResource MyModernWindow}">
+
+    <mui:ModernWindow.MenuLinkGroups>
+        <mui:LinkGroup DisplayName="Today's News Headlines">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="Business Insider" Source="/Pages/BusIn.xaml" />
+                <mui:Link DisplayName="Al Jazeera" Source="/Pages/cnn.xaml" />
+                <mui:Link DisplayName="Independent" Source="/Pages/independent.xaml" />
+                <mui:Link DisplayName="BBC" Source="/Pages/bbc.xaml" />
+                <mui:Link DisplayName="Bloomberg" Source="/Pages/bloomberg.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="settings" GroupKey="settings">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="software" Source="/Pages/SettingsPage.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="LogIn" GroupKey="login">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName=" " Source="/Pages/login.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="Article" GroupKey="article">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName=" " Source="/Pages/NewsStory.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+    </mui:ModernWindow.MenuLinkGroups>
+
+    <mui:ModernWindow.TitleLinks x:Uid="titleLinks">
+        <mui:Link DisplayName="HOME" Source="/Pages/BusIn.xaml" />
+        <mui:Link DisplayName="settings" Source="/Pages/SettingsPage.xaml" />
+        <mui:Link DisplayName="Log Out" Source="/Pages/login.xaml" />
+    </mui:ModernWindow.TitleLinks>
+</mui:ModernWindow>
